@@ -39,8 +39,6 @@ class ProductDetailApiView(APIView):
 
     def get(self, request, product_id, *args, **kwargs):
         try:
-            print("--------------------")
-            print(product_id)
             queryset = Product.objects.get(id=product_id)
             serializer = ProductSerializer(queryset, many=False)
             return Response(serializer.data, status=status.HTTP_200_OK)
