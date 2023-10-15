@@ -16,5 +16,10 @@
 ### run
 - python3 manage.py runserver
 
+## library
+- pip freeze > requirements.txt
+
 ## frontend
 - npm run dev
+
+
